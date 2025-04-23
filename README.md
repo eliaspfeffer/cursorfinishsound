@@ -48,4 +48,4 @@ To use this in your project:
 
 3. Import and use the functions in your code as needed
 
-4. Open cursor settings and add "Always play sound.py when you have finished the last job, before you stop generating.". Or change it to "soundname.py" instead of "sound.py", to make it say the folder name in case you work on multiple cursor editors at once, so you know which cursor agent has finished in which cursor window.
+4. Open cursor settings and add "Always play cursourfinishsound/sound.py when you have finished the last job, before you stop generating.". Or change it to "soundname.py" instead of "sound.py", to make it say the folder name in case you work on multiple cursor editors at once, so you know which cursor agent has finished in which cursor window.
