@@ -4,6 +4,14 @@ A simple Python package that plays a gentle notification sound and/or speaks the
 
 ## Installation
 
+0. go to the main folder of your repo, open your terminal (), write
+
+```
+git clone https://github.com/eliaspfeffer/cursorfinishsound.git
+```
+
+press Enter
+
 1. Make sure you have Python 3.x installed
 2. Install system dependencies (on Ubuntu/Debian):
 
@@ -45,7 +53,7 @@ soundname.say_folder_name()
 
 ### 3. Adjust volumne for soundname.py
 
-you can adjust how loud the robot voice says the folder name. See this line of code in soundname.py:
+you can adjust how loud the robot voice says the folder name. See this line in soundname.py:
 
 ```
 subprocess.run(['espeak', '-a', '50', parent_folder], check=True)
@@ -53,7 +61,7 @@ subprocess.run(['espeak', '-a', '50', parent_folder], check=True)
 
 ## Integration with other projects
 
-To use this in your project:
+To use this in your project, as explained above already:
 
 1. Clone this repository into your project:
 
@@ -62,5 +70,3 @@ To use this in your project:
    ```
 
 2. Install the dependencies as shown above (create a virutal environment if not already happened)
-
-3. Import and use the functions in your code as needed
