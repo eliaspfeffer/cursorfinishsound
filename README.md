@@ -4,7 +4,7 @@ A simple Python package that plays a gentle notification sound and/or speaks the
 
 ## Installation
 
-0. go to the main folder of your repo, open your terminal (), write
+0. go to the main folder of your repo, open your terminal (should be in the main folder, so you can identify later which agent in which project has finished creating), write
 
 ```
 git clone https://github.com/eliaspfeffer/cursorfinishsound.git
