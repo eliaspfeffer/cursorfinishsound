@@ -13,7 +13,7 @@ def say_folder_name():
         print(f"Speaking folder name: {parent_folder}")
         
         # Use espeak directly via subprocess with reduced volume (-a 30 sets amplitude to 30% of normal)
-        subprocess.run(['espeak', '-a', '30', parent_folder], check=True)
+        subprocess.run(['espeak', '-a', '50', parent_folder], check=True)
         
         return True
     except Exception as e:

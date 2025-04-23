@@ -12,9 +12,18 @@ A simple Python package that plays a gentle notification sound and/or speaks the
    ```
 
 3. Install the Python package dependencies:
+
    ```bash
    pip install -r requirements.txt
    ```
+
+4. Add this sentence to cursor->settings (gearwheel in agent-window)->"Rules for AI"->
+
+```
+Always play cursorfinishsound/soundname.py when you have finished the last job, before you stop generating.
+```
+
+(You can use sound.py instead of soundname.py to play a simple sound instead of saying the name of the repository folder.)
 
 ## Usage
 
@@ -34,6 +43,14 @@ from cursorfinishsound import soundname
 soundname.say_folder_name()
 ```
 
+### 3. Adjust volumne for soundname.py
+
+you can adjust how loud the robot voice says the folder name. See this line of code in soundname.py:
+
+```
+subprocess.run(['espeak', '-a', '50', parent_folder], check=True)
+```
+
 ## Integration with other projects
 
 To use this in your project:
@@ -47,5 +64,3 @@ To use this in your project:
 2. Install the dependencies as shown above (create a virutal environment if not already happened)
 
 3. Import and use the functions in your code as needed
-
-4. Open cursor settings and add "Always play cursourfinishsound/sound.py when you have finished the last job, before you stop generating.". Or change it to "soundname.py" instead of "sound.py", to make it say the folder name in case you work on multiple cursor editors at once, so you know which cursor agent has finished in which cursor window.
